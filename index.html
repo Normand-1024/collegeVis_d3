@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <style>
+        #container {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <svg width="500" height="500"></svg>
+    <svg width="500" height="500"></svg>
+    <svg width="500" height="500"></svg>
+
+    <script>
+        // data loading
+        // public variables
+
+        var csv_test = d3.csv('UC-ONLY-data.csv', function(data) {
+            console.log(data);
+        });
+        console.log(csv_test);
+
+        d3.select("#container")
+        .transition(easeTransition())
+        .delay(500)
+        .ease(d3.easeLinear)
+        .style("background-color", "red");
+
+        createRandomStuff();
+    </script>
+</body>
+</html>
