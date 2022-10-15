@@ -1,4 +1,4 @@
-,,,,City location of institution (HD2018),State abbreviation (HD2018),Institution's internet website address (HD2018),Longitude location of institution (HD2018),Latitude location of institution (HD2018),Institution size category (HD2018),Total price for in-state students living on campus 2018-19 (DRVIC2018)
+Institution name,Department,Program name,College,City location of institution (HD2018),State abbreviation (HD2018),Institution's internet website address (HD2018),Longitude location of institution (HD2018),Latitude location of institution (HD2018),Institution size category (HD2018),Total price for in-state students living on campus 2018-19 (DRVIC2018)
 University of California-Berkeley,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Chemistry, B.A.",College of Letters and Science,Berkeley,CA,www.berkeley.edu,-122.260463,37.871918,5,38066
 University of California-Berkeley,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Environmental Economics and Policy, B.A.",College of Letters and Science,Berkeley,CA,www.berkeley.edu,-122.260463,37.871918,5,38066
 University of California-Berkeley,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Conservation and Resource Studies, B.S.",College of Natural Resources,Berkeley,CA,www.berkeley.edu,-122.260463,37.871918,5,38066
@@ -640,111 +640,111 @@ University of California-Merced,SPECIAL PROGRAMS,Undecided/Undeclared,,Merced,CA
 University of California-Merced,SPECIAL PROGRAMS,Undeclared/School of Engineering,School of Engineering,Merced,CA,www.ucmerced.edu,-120.424944,37.366237,3,35663
 University of California-Merced,SPECIAL PROGRAMS,Undeclared/School of Natural Sciences,School of Natural Sciences,Merced,CA,www.ucmerced.edu,-120.424944,37.366237,3,35663
 University of California-Merced,SPECIAL PROGRAMS,"Undeclared/School of Social Sciences, Humanities and Arts","School of Social Sciences, Humanities and Arts ",Merced,CA,www.ucmerced.edu,-120.424944,37.366237,3,35663
-University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Entomology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Entomology, B.S. + M.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Environmental Sciences, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Plant Biology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art (Studio), B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art History, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art History/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art History/Religious Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Dance, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Media and Cultural Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Music, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Music and Culture, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Theatre, Film and Digital Production, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Neuroscience-CHASS B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Biochemistry, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Biology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Cell, Molecular, and Developmental Biology, B.A./B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Entomology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Entomology, B.S. + M.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Microbiology, B.A./B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Neuroscience-CNAS B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Plant Biology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,Undeclared/Life Sciences,College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BUSINESS AND MANAGEMENT,"Business Economics, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BUSINESS AND MANAGEMENT,Business (Pre),"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BUSINESS AND MANAGEMENT,"Computer Science with Business Applications, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,BUSINESS AND MANAGEMENT,"Business Administration, B.S.",School of Business,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Bioengineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Bioengineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Chemical Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Chemical Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Science, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Science, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Science with Business Applications, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Electrical Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Electrical Engineering, B.S+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Environmental Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Environmental Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Materials Science and Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Mechanical Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Mechanical Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"African American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Asian American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Asian Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Chicano Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Ethnic Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Gender and Sexuality Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Latin American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Native American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,ETHNIC AND AREA STUDIES,"Sustainability Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/Chinese B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Classical Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Comparative Ancient Civilizations, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/Comparative Literature B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/French B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Germanic Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Japanese, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/Languages B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Lanuages and Literatures/Russian B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Spanish, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Creative Writing, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"English, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Languages and Literatures/Classical Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Languages and Literatures/Comparative Ancient Civilizations, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Languages and Literatures/Japanese, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Liberal Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Linguistics, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Middle East and Islamic Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Philosophy, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,HUMANITIES,"Religious Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,MATHEMATICS,"Mathematics, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,MATHEMATICS,"Mathematics for Secondary School Teachers, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,MATHEMATICS,"Statistics, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,MATHEMATICS,Undeclared/Mathematic Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,PHYSICAL SCIENCES,"Chemistry, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,PHYSICAL SCIENCES,"Earth Sciences, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,PHYSICAL SCIENCES,"Geology, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,PHYSICAL SCIENCES,"Geophysics, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,PHYSICAL SCIENCES,"Physics, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,PHYSICAL SCIENCES,Undeclared/Physical Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Anthropology, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Critical Race and Ethnic Studies, B.A. ","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Economics, B.A. ","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Economics/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Global Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"History, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"History/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Political Science, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Political Science/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Political Science/International Affairs, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Political Science/Public Service, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Psychology, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Sociology, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Sociology/Administrative Studies, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Education, Society, and Human Development, B.A.",Graduate School of Education,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SOCIAL SCIENCES,"Public Policy, B.A.",School of Public Policy,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SPECIAL PROGRAMS,Limited-CHASS,"College of Humanities, Arts, and Social Sciences ",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SPECIAL PROGRAMS,"Undeclared/College of Humanities, Arts, and Social Sciences ","College of Humanities, Arts, and Social Sciences ",Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SPECIAL PROGRAMS,Limited-CNAS,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SPECIAL PROGRAMS,Undeclared/Life Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SPECIAL PROGRAMS,Undeclared/Mathematic Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SPECIAL PROGRAMS,Undeclared/Physical Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
-University of California-Riverside,SPECIAL PROGRAMS,Limited-Engineering,The Marlan and Rosemary Bourns College of Engineering ,Riverside,CA,WWW.UCR.EDU,-117.327410,33.972460,5,35242
+University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Entomology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Entomology, B.S. + M.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Environmental Sciences, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Plant Biology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art (Studio), B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art History, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art History/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Art History/Religious Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Dance, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Media and Cultural Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Music, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Music and Culture, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,"ART—APPLIED, FINE, PERFORMING AND ART HISTORY","Theatre, Film and Digital Production, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Neuroscience-CHASS B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Biochemistry, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Biology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Cell, Molecular, and Developmental Biology, B.A./B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Entomology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Entomology, B.S. + M.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Microbiology, B.A./B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Neuroscience-CNAS B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,"Plant Biology, B.A., B.S.",College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BIOLOGICAL AND LIFE SCIENCES,Undeclared/Life Sciences,College of Natural and Agricultural Sciences,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BUSINESS AND MANAGEMENT,"Business Economics, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BUSINESS AND MANAGEMENT,Business (Pre),"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BUSINESS AND MANAGEMENT,"Computer Science with Business Applications, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,BUSINESS AND MANAGEMENT,"Business Administration, B.S.",School of Business,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Bioengineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Bioengineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Chemical Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Chemical Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Science, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Science, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Computer Science with Business Applications, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Electrical Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Electrical Engineering, B.S+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Environmental Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Environmental Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Materials Science and Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Mechanical Engineering, B.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ENGINEERING AND COMPUTER SCIENCE,"Mechanical Engineering, B.S.+M.S.",The Marlan and Rosemary Bourns College of Engineering,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"African American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Asian American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Asian Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Chicano Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Ethnic Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Gender and Sexuality Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Latin American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Native American Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,ETHNIC AND AREA STUDIES,"Sustainability Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/Chinese B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Classical Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Comparative Ancient Civilizations, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/Comparative Literature B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/French B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Germanic Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Languages and Literatures/Japanese, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Languages and Literatures/Languages B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,Lanuages and Literatures/Russian B.A.,"College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,FOREIGN LANGUAGE AND LITERATURE,"Spanish, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Creative Writing, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"English, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Languages and Literatures/Classical Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Languages and Literatures/Comparative Ancient Civilizations, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Languages and Literatures/Japanese, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Liberal Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Linguistics, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Middle East and Islamic Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Philosophy, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,HUMANITIES,"Religious Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,MATHEMATICS,"Mathematics, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,MATHEMATICS,"Mathematics for Secondary School Teachers, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,MATHEMATICS,"Statistics, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,MATHEMATICS,Undeclared/Mathematic Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,PHYSICAL SCIENCES,"Chemistry, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,PHYSICAL SCIENCES,"Earth Sciences, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,PHYSICAL SCIENCES,"Geology, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,PHYSICAL SCIENCES,"Geophysics, B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,PHYSICAL SCIENCES,"Physics, B.A., B.S.",College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,PHYSICAL SCIENCES,Undeclared/Physical Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Anthropology, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Critical Race and Ethnic Studies, B.A. ","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Economics, B.A. ","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Economics/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Global Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"History, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"History/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Political Science, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Political Science/Administrative Studies, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Political Science/International Affairs, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Political Science/Public Service, B.A.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Psychology, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Sociology, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Sociology/Administrative Studies, B.A., B.S.","College of Humanities, Arts, and Social Sciences",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Education, Society, and Human Development, B.A.",Graduate School of Education,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SOCIAL SCIENCES,"Public Policy, B.A.",School of Public Policy,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SPECIAL PROGRAMS,Limited-CHASS,"College of Humanities, Arts, and Social Sciences ",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SPECIAL PROGRAMS,"Undeclared/College of Humanities, Arts, and Social Sciences ","College of Humanities, Arts, and Social Sciences ",Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SPECIAL PROGRAMS,Limited-CNAS,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SPECIAL PROGRAMS,Undeclared/Life Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SPECIAL PROGRAMS,Undeclared/Mathematic Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SPECIAL PROGRAMS,Undeclared/Physical Sciences,College of Natural and Agricultural Sciences ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
+University of California-Riverside,SPECIAL PROGRAMS,Limited-Engineering,The Marlan and Rosemary Bourns College of Engineering ,Riverside,CA,WWW.UCR.EDU,-117.32741,33.97246,5,35242
 University of California-San Diego,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Environmental Chemistry, B.S.",Division of Physical Sciences ,La Jolla,CA,www.ucsd.edu,-117.235866,32.877749,5,32838
 University of California-San Diego,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Earth Sciences, B.S.",Scripps Institution of Oceanography ,La Jolla,CA,www.ucsd.edu,-117.235866,32.877749,5,32838
 University of California-San Diego,"AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES","Environmental Systems — Earth Sciences, B.S.",Scripps Institution of Oceanography ,La Jolla,CA,www.ucsd.edu,-117.235866,32.877749,5,32838

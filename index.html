@@ -10,30 +10,41 @@
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <script src="main.js"></script>
+    <script src="bubble.js"></script>
 </head>
 <body>
-    <div id="container"></div>
-    <svg width="500" height="500"></svg>
-    <svg width="500" height="500"></svg>
-    <svg width="500" height="500"></svg>
+    <svg id="bubble" width="500" height="500"></svg>
+    <svg id="map" width="500" height="500"></svg>
+    <svg id="table" width="500" height="500"></svg>
 
     <script>
-        // data loading
-        // public variables
+        async function loadData () {
+            var UC_ONLY = await d3.csv('UC-ONLY-data.csv'); 
+            var UC_MAJORS = await d3.csv('UC-majors.csv'); 
+            return [UC_ONLY, UC_MAJORS];
+        }
 
-        var csv_test = d3.csv('UC-ONLY-data.csv', function(data) {
-            console.log(data);
+        const data = loadData().then(function(dataset) {
+            const UC_ONLY = dataset[0];
+            const UC_MAJORS = dataset[1];
+
+            const UNI_COLORS = {
+                'University of California-Berkeley': '#ffcc00',
+                'University of California-Davis': '#ff6666',
+                'University of California-Irvine': '#cc0066',
+                'University of California-Los Angeles': '#66cccc',
+                'University of California-Merced': '#f688bb',
+                'University of California-Berkeley': '#65587f',
+                'University of California-Riverside': '#baf1a1',
+                'University of California-San Diego': '#333333',
+                'University of California-Santa Barbara': '#75b79e',
+                'University of California-Santa Cruz': '9de3d0'
+            }
+            
+            console.log(UC_ONLY);
+
+            createBubbleChart(UC_ONLY, UNI_COLORS);
         });
-        console.log(csv_test);
-
-        d3.select("#container")
-        .transition(easeTransition())
-        .delay(500)
-        .ease(d3.easeLinear)
-        .style("background-color", "red");
-
-        createRandomStuff();
     </script>
 </body>
 </html>
