@@ -7,15 +7,71 @@
             width: 100px;
             background-color: black;
         }
+        /* On mouse hover, lighten state color */
+        path:hover {
+            fill-opacity: .7;
+        }
+
+        /* On mouse hover, highlight campus color */
+        .cities {
+            fill: rgb(217,91,67);
+            fill-opacity: 0.85;
+        }
+        .cities:hover {
+            fill:rgb(255, 215, 37);
+            fill-opacity: 1;
+        }
+
+        /* Style for Custom Tooltip */
+        div.tooltip {   
+            position: absolute;           
+            text-align: center;
+            padding: 6px;             
+            font: 18px sans-serif;        
+            background: white;   
+            border: 0px;      
+            border-radius: 8px;           
+            pointer-events: none;         
+        }
+                
+        /* Legend Font Style */
+        body {
+            font: 11px sans-serif;
+            font-weight: bolder;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        text {
+            fill: rgb(217,91,67);
+        }
+        /* Legend Position Style */
+        .legend {
+            position:absolute;
+            right: 9em;
+            top: 85em;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            padding: 1em;
+            visibility: hidden;
+        }
+
+        /* Map SVG Position Style */
+        #map {
+            position:absolute;
+            right: 55em;
+            top: 20em;
+            background-color: black;
+        }
     </style>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
 
     <script src="utility.js"></script>
     <script src="bubble.js"></script>
+    <script src="map.js"></script>
 </head>
 <body>
     <svg id="bubble" width="500" height="500"></svg>
-    <svg id="map" width="500" height="500"></svg>
+    <svg id="map"width="50vw" height="30vw"></svg>
     <svg id="table" width="500" height="500"></svg>
 
     <script>
@@ -44,7 +100,8 @@
             
             console.log(UC_ONLY);
 
-            createBubbleChart(UC_ONLY, UNI_COLORS);
+            // createBubbleChart(UC_ONLY, UNI_COLORS);
+            createMap();
         });
     </script>
 </body>

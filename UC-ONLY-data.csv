@@ -1,4 +1,4 @@
-UnitID,Institution Name,City location of institution (HD2018),State abbreviation (HD2018),Institution's internet website address (HD2018),Longitude location of institution (HD2018),Latitude location of institution (HD2018),Institution size category (HD2018),Total price for in-state students living on campus 2018-19 (DRVIC2018),
+UnitID,institution,city,state,website,lon,lat,size,price,
 110635,University of California-Berkeley,Berkeley,CA,www.berkeley.edu,-122.260463,37.871918,5,38066,
 110644,University of California-Davis,Davis,CA,www.ucdavis.edu,-121.749567,38.539667,5,35177,
 110653,University of California-Irvine,Irvine,CA,www.uci.edu/,-117.841248,33.648434,5,34261,
