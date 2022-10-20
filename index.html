@@ -28,48 +28,94 @@
             border-radius: 8px;           
             pointer-events: none;         
         }
-                
-        /* Legend Font Style */
-        body {
-            font: 11px sans-serif;
-            font-weight: bolder;
-            background-color: rgb(255, 255, 255);
+
+        /* https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js*/
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            vertical-align: top;
+            overflow: hidden;
+            pointer-events: none;
         }
-        
-        text {
-            fill: rgb(217,91,67);
+        .svg-content-responsive {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            pointer-events: none;
         }
-        /* Legend Position Style */
-        .legend {
-            position:absolute;
-            right: 9em;
-            top: 85em;
-            background-color: rgb(255, 255, 255);
-            border-radius: 8px;
-            padding: 1em;
-            visibility: hidden;
+
+        svg {
+            position: absolute;
         }
 
         /* Map SVG Position Style */
-        #map {
+        /* #map {
             position:absolute;
             right: 55em;
             top: 20em;
-            background-color: black;
-        }
+            background-color: rgb(65, 65, 65);
+        } */
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
     <script src="utility.js"></script>
     <script src="bubble.js"></script>
     <script src="map.js"></script>
+    <script src="table.js"></script>
 </head>
 <body>
-    <svg id="bubble" width="500" height="500"></svg>
-    <svg id="map"width="50vw" height="30vw"></svg>
-    <svg id="table" width="500" height="500"></svg>
+    <div class="svg-container">
+        <svg class="svg-content-responsive" id="bubble" x="0" y="0"></svg>
+        <svg class="svg-content-responsive" id="map" x="0" y="0"></svg>
+        <svg class="svg-content-responsive" id="table" x="0" y="0"></svg>
+    </div>
 
     <script>
+
+        // Window resize function
+        function updateWindow(){
+            d3.select(".svg-container")
+                .style('padding-bottom', `${Math.floor(innerHeight * 100 / innerWidth)}%`);
+            d3.select("#bubble")
+                .attr('width', `${innerWidth/2}`)
+                .attr('height', `${innerHeight/2}`)
+                .attr("preserveAspectRatio", "xMinYMin meet")
+                .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+            d3.select("#map")
+                .attr('width', `${innerWidth/2}`)
+                .attr('height', `${innerHeight/2}`)
+                .attr("transform", `translate(${innerWidth/2},0)`)
+                .attr("preserveAspectRatio", "xMinYMin meet")
+                .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+            d3.select("#table")
+                .attr('width', `${innerWidth}`)
+                .attr('height', `${innerHeight/2}`)
+                .attr("preserveAspectRatio", "xMinYMin meet")
+                .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+        }
+        d3.select(window).on('resize', updateWindow);
+
+        d3.select(".svg-container")
+            .style('padding-bottom', `${Math.floor(innerHeight * 100 / innerWidth)}%`);
+        d3.select("#bubble")
+            .attr('width', `${innerWidth/2}`)
+            .attr('height', `${innerHeight/2}`)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+        d3.select("#map")
+            .attr('width', `${innerWidth/2}`)
+            .attr('height', `${innerHeight/2}`)
+            .attr("transform", `translate(${innerWidth/2},0)`)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+        d3.select("#table")
+            .attr('width', `${innerWidth}`)
+            .attr('height', `${innerHeight/2}`)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+
+        // Main body
         async function loadData () {
             var UC_ONLY = await d3.csv('UC-ONLY-data.csv'); 
             var UC_MAJORS = await d3.csv('UC-majors.csv'); 
@@ -92,11 +138,10 @@
                 'University of California-Santa Barbara': '#75b79e',
                 'University of California-Santa Cruz': '#9de3d0'
             }
-            
-            console.log(UC_ONLY);
 
             createBubbleChart(UC_ONLY, UNI_COLORS);
             createMap();
+            //createTable();
         });
     </script>
 </body>

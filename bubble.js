@@ -10,10 +10,10 @@ function easeTransition() {
 // .style("background-color", "red");
 
 function createBubbleChart(UC_ONLY, UNI_COLORS) {
-    const bubble_svg = d3.select("#bubble")
+    const bubble_svg = d3.select("#bubble");
     //.attr("transform", `translate(0,${height / 2})`)
-    .attr("width", innerWidth / 2)
-    .attr("height", innerHeight / 2);
+                        //.attr("width", width / 2)
+                        //.attr("height", height / 2);
 
     // bubble_svg.append("rect")
     // .attr("class", "background")
@@ -29,25 +29,24 @@ function createBubbleChart(UC_ONLY, UNI_COLORS) {
         .attr('class', 'uni_bubble');
             
     var circles = uni_bubbles.append('circle')
-            .attr('cx', function (d, i) {return 40 + i * 30;})
-            .attr('cy', function (d, i) {return 40 + i * 30;})
-            .attr('r', 80)
-            .html(d => d['Institution Name'])
-            .style('fill', d => UNI_COLORS[d['Institution Name']]);
+        .attr('cx', function (d, i) {return 40 + i * 30;})
+        .attr('cy', function (d, i) {return 40 + i * 30;})
+        .attr('r', 80)
+        .style('fill', d => UNI_COLORS[d['institution']]);
             
     var texts = uni_bubbles.append('text')
-            .attr('x', function (d, i) {return 40 + i * 30;})
-            .attr('y', function (d, i) {return 40 + 5 + i * 30;})
-            .html(d => d['Institution Name']) // change text
-            .style('font-size', 15)
-            .style('text-anchor', 'middle')
-            .style('color', 'black')
-            .call(wrap, 150) // wrap text (second number is the line length), see utility.js
-            .style('-webkit-user-select', 'none') // disable selecting text
-            .style('-moz-user-select', 'none')
-            .style('-ms-user-select', 'none')
-            .style('user-select', 'none')
-            .raise(); // text will be drawn above their respective circles
+        .attr('x', function (d, i) {return 40 + i * 30;})
+        .attr('y', function (d, i) {return 40 + 5 + i * 30;})
+        .html(d => d['institution']) // change text
+        .style('font-size', 15)
+        .style('text-anchor', 'middle')
+        .style('color', 'black')
+        .call(wrap, 150) // wrap text (second number is the line length), see utility.js
+        .style('-webkit-user-select', 'none') // disable selecting text
+        .style('-moz-user-select', 'none')
+        .style('-ms-user-select', 'none')
+        .style('user-select', 'none')
+        .raise(); // text will be drawn above their respective circles
 
 
     // Create forces simulation
