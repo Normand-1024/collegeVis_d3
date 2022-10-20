@@ -2,11 +2,6 @@
 <html lang="en">
 <head>    
     <style>
-        #container {
-            height: 100px;
-            width: 100px;
-            background-color: black;
-        }
         /* On mouse hover, lighten state color */
         path:hover {
             fill-opacity: .7;
@@ -63,7 +58,7 @@
             background-color: black;
         }
     </style>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 
     <script src="utility.js"></script>
     <script src="bubble.js"></script>
@@ -100,7 +95,7 @@
             
             console.log(UC_ONLY);
 
-            // createBubbleChart(UC_ONLY, UNI_COLORS);
+            createBubbleChart(UC_ONLY, UNI_COLORS);
             createMap();
         });
     </script>
