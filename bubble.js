@@ -29,16 +29,16 @@ function createBubbleChart(UC_ONLY, UNI_COLORS) {
         .attr('class', 'uni_bubble');
             
     var circles = uni_bubbles.append('circle')
-        .attr('cx', function (d, i) {return 40 + i * 30;})
-        .attr('cy', function (d, i) {return 40 + i * 30;})
-        .attr('r', 80)
+        .attr('cx', function (d, i) {return 40 + i * 50;})
+        .attr('cy', function (d, i) {return 40 + i * 50;})
+        .attr('r', 150)
         .style('fill', d => UNI_COLORS[d['institution']]);
             
     var texts = uni_bubbles.append('text')
-        .attr('x', function (d, i) {return 40 + i * 30;})
-        .attr('y', function (d, i) {return 40 + 5 + i * 30;})
+        .attr('x', function (d, i) {return 40 + i * 50;})
+        .attr('y', function (d, i) {return 40 + 10 + i * 50;})
         .html(d => d['institution']) // change text
-        .style('font-size', 15)
+        .style('font-size', 30)
         .style('text-anchor', 'middle')
         .style('color', 'black')
         .call(wrap, 150) // wrap text (second number is the line length), see utility.js

@@ -95,25 +95,7 @@
                 .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
         }
         d3.select(window).on('resize', updateWindow);
-
-        d3.select(".svg-container")
-            .style('padding-bottom', `${Math.floor(innerHeight * 100 / innerWidth)}%`);
-        d3.select("#bubble")
-            .attr('width', `${innerWidth/2}`)
-            .attr('height', `${innerHeight/2}`)
-            .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
-        d3.select("#map")
-            .attr('width', `${innerWidth/2}`)
-            .attr('height', `${innerHeight/2}`)
-            .attr("transform", `translate(${innerWidth/2},0)`)
-            .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
-        d3.select("#table")
-            .attr('width', `${innerWidth}`)
-            .attr('height', `${innerHeight/2}`)
-            .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+        updateWindow();
 
         // Main body
         async function loadData () {
