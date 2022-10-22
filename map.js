@@ -1,4 +1,4 @@
-function createMap() {
+function createMap(tooltip) {
 
     // Will add resize listener later.
     // console.log("hi, we're in createMap")
@@ -21,13 +21,6 @@ function createMap() {
     //             .range(["rgb(213,222,217)","rgb(69,173,168)","rgb(84,36,55)","rgb(217,91,67)"]);
 
     // var legendText = ["Cities Lived", "States Lived", "States Visited", "Nada"];
-            
-    // Append Div for tooltip to SVG
-    var div = d3.select('body').append("div")   
-                .attr("class", "tooltip")               
-                .style("opacity", 0);
-
-    var divtext = div.append('text');
 
     // Load in my states data!
     d3.csv("./misc/stateslived.csv").then(function(data) {
@@ -109,17 +102,17 @@ function createMap() {
 
                     // Modification of custom tooltip code provided by Malcolm Maclean, "D3 Tips and Tricks" 
                     // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
-                    .on("mouseover", function(d) { 
+                    .on("mouseover", function(event, d) { 
                         var currentName = JSON.stringify(d.institution);
-                        div.transition()        
+                        tooltip.style("left", (event.pageX) + 12 + "px")     
+                        .style("top", (event.pageY - 28) + "px")
+                        .transition()        
                         .duration(200)      
-                        .style("opacity", .8);  
-                        div.text(d.institution + " " + d.city + ", " + d.state + "<br> <br />" + d.website)
+                        .style("opacity", .8)
+                        // div.text(d.institution + " " + d.city + ", " + d.state + "<br> <br />" + d.website)
                         // .attr("data-html", "true")
-                        //.style("left", (d3.event.pageX) + 12 + "px")     
-                        //.style("top", (d3.event.pageY - 28) + "px")
-                        .style("width", 12.5 + "em")
-                        // .style("height", 3.2 + "em");
+                        //.style("width", 12.5 + "em")
+                        //.style("height", 3.2 + "em")
                         // Using adjustable tooltip height based on the amount of characters in text
                         // .style("height", function(d) { 
                         //     if (currentName.length < 20) {
@@ -131,12 +124,12 @@ function createMap() {
                         //     }
                         // });
 
-                        divtext.html(d.institution + "<br>" + d.city + ", " + d.state + "<br>" + d.website);
+                        tooltip.select('text').html(d.institution + "<br>" + d.city + ", " + d.state + "<br>" + d.website);
                     })   
 
                     // fade out tooltip on mouse out               
                     .on("mouseout", function(d) {       
-                        div.transition()        
+                        tooltip.transition()        
                         .duration(500)      
                         .style("opacity", 0);   
                     });

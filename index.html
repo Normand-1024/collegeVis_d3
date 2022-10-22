@@ -80,7 +80,7 @@
             d3.select("#bubble")
                 .attr('width', `${innerWidth/2}`)
                 .attr('height', `${innerHeight/2}`)
-                .attr("preserveAspectRatio", "xMinYMin meet")
+                .attr("preserveAspectRatio", "xMinYMin meet") // TODO: Fix this scaling
                 .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
             d3.select("#map")
                 .attr('width', `${innerWidth/2}`)
@@ -96,6 +96,11 @@
         }
         d3.select(window).on('resize', updateWindow);
         updateWindow();
+
+        // Update function
+        function update(){
+            console.log("hey!"); // This will handle the update event while things are clicked on
+        }
 
         // Main body
         async function loadData () {
@@ -121,8 +126,32 @@
                 'University of California-Santa Cruz': '#9de3d0'
             }
 
-            createBubbleChart(UC_ONLY, UNI_COLORS);
-            createMap();
+            const DEPART_COLORS = {
+                "AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES": '#d175ff',
+                "ARCHITECTURAL AND ENVIRONMENTAL DESIGN AND PLANNING": '#ffb3b7',
+                "ART—APPLIED, FINE, PERFORMING AND ART HISTORY": '#ff6666',
+                "BIOLOGICAL AND LIFE SCIENCES": '#cc0066',
+                "BUSINESS AND MANAGEMENT": '#66cccc',
+                "COMMUNICATION": '#f688bb',
+                "ENGINEERING AND COMPUTER SCIENCE": '#65587f',
+                "ETHNIC AND AREA STUDIES": '#baf1a1',
+                "FOOD, NUTRITION AND CONSUMER SCIENCES": '#0c7b93',
+                "FOREIGN LANGUAGE AND LITERATURE": '#75b79e',
+                "HEALTH PROFESSIONS": '#befaea',
+                "HUMANITIES": "#7cd461",
+                "MATHEMATICS": "#e7f0af",
+                "PHYSICAL SCIENCES": "#f59af3",
+                "SOCIAL SCIENCES": "#c48997",
+                "SPECIAL PROGRAMS": "#aff0e0"
+            }
+                    
+            var tooltip = d3.select('body').append("div")   
+                        .attr("class", "tooltip")               
+                        .style("opacity", 0);
+            tooltip.append('text');
+
+            createBubbleChart(UC_MAJORS, DEPART_COLORS, tooltip, update);
+            createMap(tooltip);
             //createTable();
         });
     </script>

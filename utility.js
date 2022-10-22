@@ -11,6 +11,8 @@ function wrap(text, width) {
           lineHeight = 1.1, // ems
           y = text.attr("y"),
           x = text.attr("x"),
+          color = text.style("color"),
+          font = text.style('font-family'),
           tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", "0em")
       while (word = words.pop()) {
         line.push(word)
@@ -19,7 +21,7 @@ function wrap(text, width) {
           line.pop()
           tspan.text(line.join(" "))
           line = [word]
-          tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", `${++lineNumber * lineHeight}em`).text(word)
+          tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", `${++lineNumber * lineHeight}em`).text(word).style("fill", color).style('font', font)
         }
       }
       var offset_value = lineNumber / 2 * lineHeight;
