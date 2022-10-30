@@ -59,6 +59,7 @@ function createBubbleChart(UC_MAJORS, tooltip, update) {
 
     var bubble_svg = d3.select("#bubble");
     const UC_MAJOR_CATEGORIES = d3.group(UC_MAJORS,d=>d.Department);//new Set(UC_MAJORS.map(d => d.Department));
+    
     var nodes = Array.from(UC_MAJOR_CATEGORIES).map(d => ({
         r: Math.min(innerWidth, innerHeight) * 0.14,//0.12,
         x: Math.random() * innerWidth,
@@ -66,7 +67,7 @@ function createBubbleChart(UC_MAJORS, tooltip, update) {
         category: d[0],
         entries: d[1]
     }));
-
+    // console.log(nodes)
     var uni_bubbles = bubble_svg.selectAll('g')
         .data(nodes)
         .join('g')

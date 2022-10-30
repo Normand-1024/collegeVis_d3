@@ -92,6 +92,5 @@ function createMap(UC_ONLY, tooltip) {
                 .duration(500)      
                 .style("opacity", 0);   
             });
-        // }); 
     });
 }
