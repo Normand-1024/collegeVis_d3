@@ -49,17 +49,11 @@
             position: absolute;
         }
 
-        /* Map SVG Position Style */
-        /* #map {
-            position:absolute;
-            right: 55em;
-            top: 20em;
-            background-color: rgb(65, 65, 65);
-        } */
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
     <script src="utility.js"></script>
+    <script src="constants.js"></script>
     <script src="bubble.js"></script>
     <script src="map.js"></script>
     <script src="table.js"></script>
@@ -97,11 +91,6 @@
         d3.select(window).on('resize', updateWindow);
         updateWindow();
 
-        // Update function
-        function update(){
-            console.log("hey!"); // This will handle the update event while things are clicked on
-        }
-
         // Main body
         async function loadData () {
             var UC_ONLY = await d3.csv('UC-ONLY-data.csv'); 
@@ -110,41 +99,24 @@
         }
 
         const data = loadData().then(function(dataset) {
+            // Update function
+            //  - The second argument should be an array of arguments, just in case some events return multiple arguments
+            function update(event_type, arguments){
+
+                // Update each view
+                //      - The filtered variables are declared in each .js file, but we can access them here
+                // bubble_filtered = map_selected || chart_selected;
+                // map_filtered = bubble_selected || chart_selected;
+                // chart_filtered = map_selected || bubble_selected;
+                updateBubbleChart(UC_MAJORS, tooltip, update);
+                // updateMapChart();
+                // updateTableChart();
+            }
+
             const UC_ONLY = dataset[0];
             const UC_MAJORS = dataset[1];
 
-            const UNI_COLORS = {
-                'University of California-Berkeley': '#ffcc00',
-                'University of California-Davis': '#ff6666',
-                'University of California-Irvine': '#cc0066',
-                'University of California-Los Angeles': '#66cccc',
-                'University of California-Merced': '#f688bb',
-                'University of California-Berkeley': '#65587f',
-                'University of California-Riverside': '#baf1a1',
-                'University of California-San Diego': '#0c7b93',
-                'University of California-Santa Barbara': '#75b79e',
-                'University of California-Santa Cruz': '#9de3d0'
-            }
-
-            const DEPART_COLORS = {
-                "AGRICULTURE, NATURAL RESOURCES AND ENVIRONMENTAL STUDIES": '#d175ff',
-                "ARCHITECTURAL AND ENVIRONMENTAL DESIGN AND PLANNING": '#ffb3b7',
-                "ART—APPLIED, FINE, PERFORMING AND ART HISTORY": '#ff6666',
-                "BIOLOGICAL AND LIFE SCIENCES": '#cc0066',
-                "BUSINESS AND MANAGEMENT": '#66cccc',
-                "COMMUNICATION": '#f688bb',
-                "ENGINEERING AND COMPUTER SCIENCE": '#65587f',
-                "ETHNIC AND AREA STUDIES": '#baf1a1',
-                "FOOD, NUTRITION AND CONSUMER SCIENCES": '#0c7b93',
-                "FOREIGN LANGUAGE AND LITERATURE": '#75b79e',
-                "HEALTH PROFESSIONS": '#befaea',
-                "HUMANITIES": "#7cd461",
-                "MATHEMATICS": "#e7f0af",
-                "PHYSICAL SCIENCES": "#f59af3",
-                "SOCIAL SCIENCES": "#c48997",
-                "SPECIAL PROGRAMS": "#aff0e0"
-            }
-                    
+            // Create tooltip div
             var tooltip = d3.select('body').append("div")   
                         .attr("class", "tooltip")               
                         .style("opacity", 0);

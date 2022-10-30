@@ -1,7 +1,7 @@
-function easeTransition() {
-    return d3.transition()
-            .duration(1000);
-}
+
+// =======================
+//  Utility functions
+// =======================
 
 function scaleAndCenter(val, minVal, maxVal, ratio) {
     var newLength = (maxVal - minVal) * ratio
@@ -11,16 +11,42 @@ function scaleAndCenter(val, minVal, maxVal, ratio) {
     return scaleFunc(val);
 }
 
-// d3.select("#bubble")
-// .transition(easeTransition())
-// .delay(500)
-// .ease(d3.easeLinear)
-// .style("background-color", "red");
+// =======================
+//  BubbleChart variables
+// =======================
 
-function createBubbleChart(UC_MAJORS, DEPART_COLORS, tooltip, update) {
-    // ========================
-    // Initial variables
-    // ========================
+var bubble_selected = false;
+var bubble_filtered = false;
+var bubble_selected_circles = []; // For storing selected circle, in format d.category
+
+// =======================
+//  BubbleChart functions
+// =======================
+
+function updateBubbleChart(UC_MAJORS, tooltip, update) {
+    d3.select("#bubble").selectAll('g').selectAll('circle')
+        .transition()
+        .duration(300)
+        .ease(d3.easeLinear)
+        .style('fill', function(d) {
+            if (bubble_selected && !bubble_selected_circles.includes(d.category))
+                return mix_hexes(DEPART_COLORS[d.category], '#000000');
+            else {return DEPART_COLORS[d.category];}
+        })
+        .style('stroke', function(d) {
+            if (bubble_selected && bubble_selected_circles.includes(d.category))
+                return 'gold';
+        })
+        .duration(100)
+        .ease(d3.easeLinear)
+        .style('stroke-width', function(d) {
+            if (bubble_selected && bubble_selected_circles.includes(d.category))
+                return '10px';
+            else {return '0px';}
+        });
+}
+
+function createBubbleChart(UC_MAJORS, tooltip, update) {
 
     var viewBoxXMin = 0;
     var viewBoxYMin = 0;
@@ -31,7 +57,7 @@ function createBubbleChart(UC_MAJORS, DEPART_COLORS, tooltip, update) {
     // Creating bubbles and text
     // ========================
 
-    const bubble_svg = d3.select("#bubble");
+    var bubble_svg = d3.select("#bubble");
     const UC_MAJOR_CATEGORIES = d3.group(UC_MAJORS,d=>d.Department);//new Set(UC_MAJORS.map(d => d.Department));
     var nodes = Array.from(UC_MAJOR_CATEGORIES).map(d => ({
         r: Math.min(innerWidth, innerHeight) * 0.14,//0.12,
@@ -47,7 +73,18 @@ function createBubbleChart(UC_MAJORS, DEPART_COLORS, tooltip, update) {
         .style('pointer-events', 'all')
         .attr('class', 'uni_bubble')
         .on('mouseover', function(event, d) {
-            d3.select(this).select('circle').style('fill', 'rgb(255, 215, 37)');
+            if (!bubble_selected_circles.includes(d.category)){
+                d3.select(this).select('circle')
+                    .style('stroke', function(d) {
+                        if (!bubble_selected_circles.includes(d.category)){
+                            return 'grey';
+                        }
+                    })
+                    .transition()
+                    .duration(50)
+                    .ease(d3.easeLinear)
+                    .style('stroke-width', '5px');
+            }
 
             tooltip.style("left", (event.pageX) + 12 + "px")     
             .style("top", (event.pageY - 28) + "px")
@@ -58,18 +95,39 @@ function createBubbleChart(UC_MAJORS, DEPART_COLORS, tooltip, update) {
             tooltip.select('text').html(d.category + "<br>" + `Program Count: ${d.entries.length}`);
         })
         .on("mouseout", function(event, d) {
-            d3.select(this).select('circle').style('fill', d => DEPART_COLORS[d.category]);
+            if (!bubble_selected_circles.includes(d.category)){
+                d3.select(this).select('circle')
+                    .transition()
+                    .duration(100)
+                    .ease(d3.easeLinear)
+                    .style('stroke-width', '0px');
+            }
 
             tooltip.transition()        
             .duration(500)      
             .style("opacity", 0);   
         })
         .on("click", function(event, d){
-            update();
+            if (bubble_selected_circles.includes(d.category)){
+                // Cancelling a selection
+                bubble_selected_circles = bubble_selected_circles.filter(e => e !== d.category);
+
+                if (bubble_selected_circles.length <= 0) {bubble_selected = false;}
+            }
+            else {
+                // Adding selection
+                bubble_selected_circles = bubble_selected_circles.concat(d.category);
+                bubble_selected = true; 
+            }
+
+            console.log(bubble_selected_circles);
+            console.log(bubble_selected);
+            update(EVENT_CODE['bubble_click_update'], [bubble_selected_circles]);
         });
             
     var circles = uni_bubbles.append('circle')
-        .style('fill', d => DEPART_COLORS[d.category]);
+        .style('fill', d => DEPART_COLORS[d.category])
+        .style('stroke-width', '0px');;
             
     var texts = uni_bubbles.append('text')
         .attr('x', d => d.x)
@@ -91,9 +149,9 @@ function createBubbleChart(UC_MAJORS, DEPART_COLORS, tooltip, update) {
     // ========================
 
     // Initial variables and functions
-    var forceStrength = 0.04; 
+    var forceStrength = 0.08 
     var centre = [viewBoxXMax / 2, viewBoxYMax / 2]; // WARNING: this is assuming viewBoxMins are 0
-    var centreAxisRatio = 0.5;
+    var centreAxisRatio = 0.7;
 
     function ticked() {
         circles
