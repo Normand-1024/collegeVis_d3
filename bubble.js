@@ -67,7 +67,7 @@ function createBubbleChart(UC_MAJORS, tooltip, update) {
         category: d[0],
         entries: d[1]
     }));
-    // console.log(nodes)
+    //console.log(nodes)
     var uni_bubbles = bubble_svg.selectAll('g')
         .data(nodes)
         .join('g')
