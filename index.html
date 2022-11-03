@@ -94,8 +94,9 @@
         // Main body
         async function loadData () {
             var UC_ONLY = await d3.csv('UC-ONLY-data.csv'); 
-            var UC_MAJORS = await d3.csv('UC-majors.csv'); 
-            return [UC_ONLY, UC_MAJORS];
+            var UC_MAJORS = await d3.csv('UC-majors.csv');
+            var US_STATES = await d3.json('./us-states.json');
+            return [UC_ONLY, UC_MAJORS, US_STATES];
         }
 
         const data = loadData().then(function(dataset) {
@@ -115,6 +116,7 @@
 
             const UC_ONLY = dataset[0];
             const UC_MAJORS = dataset[1];
+            const US_STATES = dataset[2];
 
             // Create tooltip div
             var tooltip = d3.select('body').append("div")   
@@ -123,7 +125,7 @@
             tooltip.append('text');
 
             createBubbleChart(UC_MAJORS, tooltip, update);
-            createMap(UC_ONLY, tooltip);
+            createMap(UC_ONLY, US_STATES, tooltip);
             //createTable();
         });
     </script>
