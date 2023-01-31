@@ -2,49 +2,131 @@
 <html lang="en">
 <head>    
     <style>
-        #container {
-            height: 100px;
-            width: 100px;
-            background-color: black;
+        /* On mouse hover, lighten state color */
+        path:hover {
+            fill-opacity: .7;
         }
+
+        /* On mouse hover, highlight campus color */
+        .cities {
+            fill: rgb(217,91,67);
+            fill-opacity: 0.85;
+        }
+        .cities:hover {
+            fill:rgb(255, 215, 37);
+            fill-opacity: 1;
+        }
+
+        /* Style for Custom Tooltip */
+        div.tooltip {   
+            position: absolute;           
+            text-align: center;
+            padding: 6px;             
+            font: 18px sans-serif;        
+            background: white;   
+            border: 0px;      
+            border-radius: 8px;           
+            pointer-events: none;         
+        }
+
+        /* https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js*/
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            vertical-align: top;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .svg-content-responsive {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            pointer-events: none;
+        }
+
+        svg {
+            position: absolute;
+        }
+
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
     <script src="utility.js"></script>
+    <script src="constants.js"></script>
     <script src="bubble.js"></script>
+    <script src="map.js"></script>
+    <script src="table.js"></script>
 </head>
 <body>
-    <svg id="bubble" width="500" height="500"></svg>
-    <svg id="map" width="500" height="500"></svg>
-    <svg id="table" width="500" height="500"></svg>
+    <div class="svg-container">
+        <svg class="svg-content-responsive" id="bubble" x="0" y="0"></svg>
+        <svg class="svg-content-responsive" id="map" x="0" y="0"></svg>
+        <svg class="svg-content-responsive" id="table" x="0" y="0"></svg>
+    </div>
 
     <script>
+
+        // Window resize function
+        function updateWindow(){
+            d3.select(".svg-container")
+                .style('padding-bottom', `${Math.floor(innerHeight * 100 / innerWidth)}%`);
+            d3.select("#bubble")
+                .attr('width', `${innerWidth/2}`)
+                .attr('height', `${innerHeight/2}`)
+                .attr("preserveAspectRatio", "xMinYMin meet") // TODO: Fix this scaling
+                .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+            d3.select("#map")
+                .attr('width', `${innerWidth/2}`)
+                .attr('height', `${innerHeight/2}`)
+                .attr("transform", `translate(${innerWidth/2},0)`)
+                .attr("preserveAspectRatio", "xMinYMin meet")
+                .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+            d3.select("#table")
+                .attr('width', `${innerWidth}`)
+                .attr('height', `${innerHeight/2}`)
+                .attr("preserveAspectRatio", "xMinYMin meet")
+                .attr("viewBox", `0 0 ${innerWidth} ${innerHeight}`);
+        }
+        d3.select(window).on('resize', updateWindow);
+        updateWindow();
+
+        // Main body
         async function loadData () {
             var UC_ONLY = await d3.csv('UC-ONLY-data.csv'); 
-            var UC_MAJORS = await d3.csv('UC-majors.csv'); 
-            return [UC_ONLY, UC_MAJORS];
+            var UC_MAJORS = await d3.csv('UC-majors.csv');
+            var US_STATES = await d3.json('./us-states.json');
+            return [UC_ONLY, UC_MAJORS, US_STATES];
         }
 
         const data = loadData().then(function(dataset) {
+            // Update function
+            //  - The second argument should be an array of arguments, just in case some events return multiple arguments
+            function update(event_type, arguments){
+
+                // Update each view
+                //      - The filtered variables are declared in each .js file, but we can access them here
+                // bubble_filtered = map_selected || chart_selected;
+                // map_filtered = bubble_selected || chart_selected;
+                // chart_filtered = map_selected || bubble_selected;
+                updateBubbleChart(UC_MAJORS, tooltip, update);
+                // updateMapChart();
+                // updateTableChart();
+            }
+
             const UC_ONLY = dataset[0];
             const UC_MAJORS = dataset[1];
+            const US_STATES = dataset[2];
 
-            const UNI_COLORS = {
-                'University of California-Berkeley': '#ffcc00',
-                'University of California-Davis': '#ff6666',
-                'University of California-Irvine': '#cc0066',
-                'University of California-Los Angeles': '#66cccc',
-                'University of California-Merced': '#f688bb',
-                'University of California-Berkeley': '#65587f',
-                'University of California-Riverside': '#baf1a1',
-                'University of California-San Diego': '#0c7b93',
-                'University of California-Santa Barbara': '#75b79e',
-                'University of California-Santa Cruz': '#9de3d0'
-            }
-            
-            console.log(UC_ONLY);
+            // Create tooltip div
+            var tooltip = d3.select('body').append("div")   
+                        .attr("class", "tooltip")               
+                        .style("opacity", 0);
+            tooltip.append('text');
 
-            createBubbleChart(UC_ONLY, UNI_COLORS);
+            createBubbleChart(UC_MAJORS, tooltip, update);
+            createMap(UC_ONLY, US_STATES, tooltip);
+            //createTable();
         });
     </script>
 </body>
